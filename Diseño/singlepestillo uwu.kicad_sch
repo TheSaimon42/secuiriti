@@ -4184,7 +4184,7 @@
 			)
 		)
 	)
-	(global_label "J6 - NC"
+	(global_label "J4 - NC"
 		(shape input)
 		(at 255.778 90.424 180)
 		(fields_autoplaced yes)
@@ -4206,7 +4206,7 @@
 			)
 		)
 	)
-	(global_label "J6 - NA"
+	(global_label "J4 - NA"
 		(shape input)
 		(at 255.778 95.504 180)
 		(fields_autoplaced yes)
@@ -4448,7 +4448,7 @@
 			)
 		)
 	)
-	(global_label "J6 - COM"
+	(global_label "J4 - COM"
 		(shape input)
 		(at 255.778 92.964 180)
 		(fields_autoplaced yes)
@@ -4470,7 +4470,7 @@
 			)
 		)
 	)
-	(global_label "J5 - NA"
+	(global_label "J3 - NA"
 		(shape input)
 		(at 255.778 84.074 180)
 		(fields_autoplaced yes)
@@ -4558,7 +4558,7 @@
 			)
 		)
 	)
-	(global_label "J5 - COM"
+	(global_label "J3 - COM"
 		(shape input)
 		(at 255.778 86.614 180)
 		(fields_autoplaced yes)
@@ -4690,7 +4690,7 @@
 			)
 		)
 	)
-	(global_label "J5 - NC"
+	(global_label "J3 - NC"
 		(shape input)
 		(at 255.778 81.534 180)
 		(fields_autoplaced yes)
@@ -6809,7 +6809,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MacroLib:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-3P-3_Vertical"
 			(at 72.263 34.544 0)
 			(effects
 				(font
