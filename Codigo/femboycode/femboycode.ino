@@ -3,27 +3,29 @@
 #include <AudioOutputI2S.h>
 #include <FS.h>
 #include <SPIFFS.h>
-
+int rele = 18
 int solenoide = 16;
 int sensor = 23;
 bool alarma = false;
 
-tiempoInicio = 0;
-duracionAlarma = 10000;
-solenoidemax = 5000; 
-tiemposolenoido= 0;
+int tiempoInicio = 0;
+int duracionAlarma = 10000;
+int solenoidemax = 5000; 
+int tiemposolenoido= 0;
 AudioFileSourceFS *archivoWAV;
 AudioGeneratorWAV *generador;
 AudioOutputI2S *salidaAudio;
 
 void setup() {
   // put your setup code here, to run once:
+  Serial.begin(115200);
+  delay(500);
 
   pinMode(solenoide, OUTPUT);
   digitalWrite(solenoide, LOW);
   pinMode(sensor, INPUT);
 
-  digitalWrite(rele1, LOW);
+  digitalWrite(rele, LOW);
   salidaAudio = new AudioOutputI2S();
   salidaAudio->SetPinout(21, 22, 26);
   salidaAudio->SetGain(0.6);
@@ -39,9 +41,6 @@ void setup() {
   }
   archivoWAV = new AudioFileSourceFS(SPIFFS, "/alarma.wav");
   generador = new AudioGeneratorWAV();
-
-  salidaAudio->SetPinout(21, 22, 26);
-  salidaAudio->SetGain(0.77); 
 
 }
 
@@ -69,3 +68,5 @@ if (alarma && generador->isRunning()) {
   }
 
 }
+
+
