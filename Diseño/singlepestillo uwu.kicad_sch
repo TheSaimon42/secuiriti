@@ -4348,28 +4348,6 @@
 			)
 		)
 	)
-	(global_label "GPIO26"
-		(shape output)
-		(at 66.04 72.39 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4536b5c5-417e-48fc-9f31-2463a554534a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.9195 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "J3 - COM"
 		(shape input)
 		(at 261.62 51.054 270)
@@ -4546,7 +4524,7 @@
 			)
 		)
 	)
-	(global_label "GPIO26"
+	(global_label "GPIO19"
 		(shape input)
 		(at 136.271 88.138 180)
 		(fields_autoplaced yes)
