@@ -60,7 +60,7 @@ void loop() {
     generador->loop();
   }
   if (alarma && millis() - tiempoInicio > duracionAlarma) {
-    Serial.println(" Tiempo de alarma finalizado");
+    Serial.println("Qu Tiempo de alarma finalizado");
     digitalWrite(solenoide, LOW);
     alarma = false;
 
